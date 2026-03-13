@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelexta Brasil | Transparência e verificação no uso de IA</title>
+  <meta name="description" content="A Intelexta ajuda universidades, pesquisadores e equipes a documentar e validar trabalho assistido por IA com relatórios de integridade e comprovantes verificáveis." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Intelexta" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="keywords" content="IA, inteligência artificial, transparência no uso de IA, integridade acadêmica, universidades, pesquisa, verificação, comprovante verificável, relatório de integridade, Intelexta" />
+
+  <link rel="canonical" href="https://intelexta.com.br/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://intelexta.com.br/" />
+  <link rel="alternate" hreflang="en" href="https://intelexta.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://intelexta.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Intelexta Brasil" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Intelexta Brasil | Transparência e verificação no uso de IA" />
+  <meta property="og:description" content="Relatórios de integridade e comprovantes verificáveis para universidades, pesquisadores e equipes que usam IA." />
+  <meta property="og:url" content="https://intelexta.com.br/" />
+  <meta property="og:image" content="https://intelexta.com.br/assets/social/og-home.jpg" />
+  <meta property="og:image:alt" content="Intelexta Brasil — transparência e verificação no uso de IA" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Intelexta Brasil | Transparência e verificação no uso de IA" />
+  <meta name="twitter:description" content="Documente e valide trabalho assistido por IA com relatórios de integridade e comprovantes verificáveis." />
+  <meta name="twitter:image" content="https://intelexta.com.br/assets/social/og-home.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Intelexta",
+    "url": "https://intelexta.com.br/",
+    "logo": "https://intelexta.com.br/assets/logo/intelexta-logo.png",
+    "email": "contato@intelexta.com",
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://x.com/",
+      "https://www.linkedin.com/"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Intelexta Brasil",
+    "url": "https://intelexta.com.br/",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a31;
+      --panel-2: #18223f;
+      --text: #eef2ff;
+      --muted: #b6c0e0;
+      --line: rgba(255,255,255,0.10);
+      --accent: #8aa4ff;
+      --accent-2: #d9e1ff;
+      --shadow: 0 20px 50px rgba(0,0,0,0.28);
+      --max: 1160px;
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #162145 0%, var(--bg) 40%, #070b16 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(11, 16, 32, 0.72);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 72px;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      font-size: 1.1rem;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: #0b1020;
+    }
+
+    .button-primary:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.04);
+    }
+
+    .button-secondary {
+      background: transparent;
+      border-color: var(--line);
+      color: var(--text);
+    }
+
+    .button-secondary:hover {
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(255,255,255,0.18);
+    }
+
+    .hero {
+      padding: 84px 0 44px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(138,164,255,0.35);
+      color: var(--accent-2);
+      background: rgba(138,164,255,0.08);
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.95fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 700px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .hero-card,
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 22px;
+    }
+
+    .mini-label {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .card h3, .hero-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .hero-card p,
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    section {
+      padding: 28px 0;
+    }
+
+    .section-title {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      letter-spacing: -0.03em;
+    }
+
+    .section-intro {
+      margin: 0 0 26px;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 22px;
+      height: 100%;
+    }
+
+    .card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.03);
+      position: relative;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #0b1020;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .quote {
+      padding: 22px;
+      border-left: 3px solid var(--accent);
+      background: rgba(138,164,255,0.08);
+      border-radius: 16px;
+      color: var(--accent-2);
+      margin-top: 18px;
+    }
+
+    .cta-box {
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer {
+      padding: 34px 0 56px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .grid-2,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-inner {
+        padding: 12px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">Intelexta <span>Brasil</span></a>
+      <nav class="nav-links" aria-label="Menu principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#universidades">Para universidades</a>
+        <a href="/blog/">Blog</a>
+        <a href="/docs/">Docs</a>
+        <a href="mailto:contato@intelexta.com">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Transparência, verificação e responsabilidade no uso de IA</div>
+          <h1>A camada de confiança para trabalho com IA</h1>
+          <p>
+            Não basta gerar. É preciso validar. A Intelexta transforma rascunhos assistidos por IA em artefatos mais legíveis,
+            verificáveis e duráveis, com relatórios de integridade e comprovantes verificáveis para ensino, pesquisa e trabalho intelectual.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://validator.intelexta.com" target="_blank" rel="noopener noreferrer">Validar um texto</a>
+            <a class="button button-secondary" href="mailto:contato@intelexta.com">Falar com a Intelexta</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumo do produto">
+          <div class="mini-label">Mensagem central</div>
+          <h3>De disclosure para evidência</h3>
+          <p>
+            A questão já não é apenas “você usou IA?”. A questão agora é mostrar o processo, os checks, os riscos identificados,
+            as fontes e o comprovante.
+          </p>
+          <div class="quote">
+            Transparência no uso de IA não é só declaração. É registro, verificação e responsabilidade.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">O fim da caixa-preta</h2>
+        <p class="section-intro">
+          Modelos de linguagem já fazem parte do trabalho cotidiano. O problema é que, na maioria dos casos, o resultado chega sem trilha de auditoria,
+          sem contexto e sem um registro claro do que foi checado. Hoje, instituições pedem declaração de uso de IA, mas ainda recebem descrições vagas.
+        </p>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Sem trilha de auditoria</h3>
+            <p>A maior parte dos outputs de IA circula sem documentação verificável do processo.</p>
+          </article>
+          <article class="card">
+            <h3>Disclosure insuficiente</h3>
+            <p>Dizer “usei IA” não mostra o que foi revisado, corrigido, assumido ou verificado.</p>
+          </article>
+          <article class="card">
+            <h3>Velocidade versus confiança</h3>
+            <p>Estudantes, pesquisadores e equipes precisam ganhar produtividade sem perder legibilidade e responsabilidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">O que a Intelexta entrega</h2>
+        <p class="section-intro">
+          A Intelexta adiciona uma camada independente de verificação ao trabalho assistido por IA. Não é detector de IA. É infraestrutura de legibilidade,
+          integridade e evidência.
+        </p>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Relatório de Integridade</h3>
+            <p>Um relatório legível por humanos com sinais sobre confiabilidade factual, lacunas de citação, pontos frágeis, riscos e melhorias sugeridas.</p>
+          </article>
+          <article class="card">
+            <h3>Comprovante verificável</h3>
+            <p>Um recibo verificável que pode ser compartilhado, arquivado e auditado depois, com mais clareza e rastreabilidade.</p>
+          </article>
+          <article class="card">
+            <h3>Registro do processo</h3>
+            <p>Uma forma de tornar o trabalho com IA mais legível, mais portátil e menos preso ao histórico informal de chats.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona">
+      <div class="container">
+        <h2 class="section-title">Como funciona</h2>
+        <p class="section-intro">
+          Da análise do rascunho ao comprovante verificável, a proposta é simples: transformar uso de IA em algo mais claro, documentado e demonstrável.
+        </p>
+        <div class="steps">
+          <article class="step">
+            <h3>Envie um rascunho ou ideia</h3>
+            <p>Cole seu texto ou comece a partir de um conceito.</p>
+          </article>
+          <article class="step">
+            <h3>Receba análise estruturada</h3>
+            <p>A Intelexta produz sinais de integridade, confiabilidade e necessidade de revisão.</p>
+          </article>
+          <article class="step">
+            <h3>Gere um comprovante verificável</h3>
+            <p>O resultado pode ser exportado e compartilhado com mais rastreabilidade.</p>
+          </article>
+          <article class="step">
+            <h3>Mostre seu processo</h3>
+            <p>Em vez de esconder o uso de IA, documente o trabalho com mais responsabilidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="universidades">
+      <div class="container">
+        <h2 class="section-title">Para quem é</h2>
+        <p class="section-intro">
+          Construída para quem precisa mostrar o trabalho, explicar o processo e demonstrar cuidado no uso de IA.
+        </p>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Universidades e ensino</h3>
+            <p>Ajuda a operacionalizar políticas de transparência no uso de IA em trabalhos acadêmicos, TCCs, dissertações e atividades avaliativas.</p>
+          </article>
+          <article class="card">
+            <h3>Pesquisa</h3>
+            <p>Permite documentar como a IA participou da escrita, da revisão ou da estruturação de um texto científico.</p>
+          </article>
+          <article class="card">
+            <h3>Editores e pareceristas</h3>
+            <p>Oferece uma forma mais clara de observar afirmações centrais, níveis de confiança e lacunas de citação.</p>
+          </article>
+          <article class="card">
+            <h3>Equipes e organizações</h3>
+            <p>Ajuda a revisar memos, análises e documentos gerados com apoio de IA antes de circulação interna ou externa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Por que isso importa agora no Brasil</h2>
+        <p class="section-intro">
+          Universidades brasileiras estão começando a definir regras mais claras para o uso de IA. A tendência não é apenas proibir ou exigir uma nota genérica,
+          mas pedir mais transparência, responsabilidade e clareza sobre o processo. A Intelexta foi pensada para esse novo cenário.
+        </p>
+        <div class="card">
+          <h3>Menos opacidade. Mais evidência.</h3>
+          <ul>
+            <li>Transparência no uso de IA em ensino e pesquisa</li>
+            <li>Registro verificável do processo de elaboração</li>
+            <li>Relatórios de integridade com linguagem clara</li>
+            <li>Comprovantes verificáveis para auditoria e compartilhamento</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card cta-box">
+          <div>
+            <h2 class="section-title" style="margin-bottom: 8px;">Quer conversar sobre um piloto no Brasil?</h2>
+            <p class="section-intro" style="margin: 0; max-width: 700px;">
+              Estamos abrindo conversas com universidades, grupos de pesquisa, professores, editores e equipes interessadas em transparência no uso de IA.
+            </p>
+          </div>
+          <div class="hero-actions" style="margin-top: 0;">
+            <a class="button button-primary" href="mailto:contato@intelexta.com">Entrar em contato</a>
+            <a class="button button-secondary" href="https://validator.intelexta.com" target="_blank" rel="noopener noreferrer">Ver demonstração</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div>
+        <strong>Intelexta</strong><br />
+        Transparência, verificação e responsabilidade para trabalho assistido por IA.
+      </div>
+      <div class="footer-links">
+        <a href="https://validator.intelexta.com" target="_blank" rel="noopener noreferrer">Validator</a>
+        <a href="/blog/">Blog</a>
+        <a href="/docs/">Docs</a>
+        <a href="mailto:contato@intelexta.com">Contato</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

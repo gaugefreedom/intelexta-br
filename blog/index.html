@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Intelexta Brasil</title>
+  <meta name="description" content="Blog da Intelexta Brasil com artigos sobre transparência no uso de IA, integridade acadêmica, pesquisa e verificação." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Intelexta" />
+  <meta name="theme-color" content="#0b1020" />
+
+  <link rel="canonical" href="https://intelexta.com.br/blog/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://intelexta.com.br/blog/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Intelexta Brasil" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Blog | Intelexta Brasil" />
+  <meta property="og:description" content="Artigos e notas sobre transparência no uso de IA, pesquisa, universidades e integridade." />
+  <meta property="og:url" content="https://intelexta.com.br/blog/" />
+  <meta property="og:image" content="https://intelexta.com.br/assets/social/og-home.jpg" />
+  <meta property="og:image:alt" content="Blog da Intelexta Brasil" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog | Intelexta Brasil" />
+  <meta name="twitter:description" content="Artigos e notas sobre transparência no uso de IA, pesquisa, universidades e integridade." />
+  <meta name="twitter:image" content="https://intelexta.com.br/assets/social/og-home.jpg" />
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a31;
+      --text: #eef2ff;
+      --muted: #b6c0e0;
+      --line: rgba(255,255,255,0.10);
+      --accent: #8aa4ff;
+      --accent-2: #d9e1ff;
+      --shadow: 0 20px 50px rgba(0,0,0,0.28);
+      --max: 1160px;
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #162145 0%, var(--bg) 40%, #070b16 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(11, 16, 32, 0.72);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 72px;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      font-size: 1.1rem;
+    }
+
+    .brand span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .hero {
+      padding: 96px 0 48px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(138,164,255,0.35);
+      color: var(--accent-2);
+      background: rgba(138,164,255,0.08);
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+    }
+
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 760px;
+    }
+
+    .card {
+      margin-top: 32px;
+      padding: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+    }
+
+    .button-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: #0b1020;
+    }
+
+    .button-secondary {
+      background: transparent;
+      border-color: var(--line);
+      color: var(--text);
+    }
+
+    .button-secondary:hover,
+    .button-primary:hover {
+      transform: translateY(-1px);
+    }
+
+    .footer {
+      padding: 34px 0 56px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .nav-inner {
+        padding: 12px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/">Intelexta <span>Brasil</span></a>
+      <nav class="nav-links" aria-label="Menu principal">
+        <a href="/">Início</a>
+        <a href="/blog/">Blog</a>
+        <a href="/docs/">Docs</a>
+        <a href="https://validator.intelexta.com" target="_blank" rel="noopener noreferrer">Validator</a>
+        <a href="mailto:contato@intelexta.com">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Blog</div>
+        <h1>Conteúdo em português em breve</h1>
+        <p class="lead">
+          O blog da Intelexta Brasil vai reunir artigos, notas e reflexões sobre transparência no uso de IA,
+          integridade acadêmica, pesquisa, stewardship e verificação.
+        </p>
+
+        <div class="card">
+          <h2>Em preparação</h2>
+          <p>
+            Estamos organizando os primeiros textos para o público brasileiro, com foco em universidades,
+            pesquisadores, professores, editores e equipes que precisam tornar o uso de IA mais legível e verificável.
+          </p>
+          <ul>
+            <li>Transparência no uso de IA nas universidades</li>
+            <li>Do disclosure ao comprovante verificável</li>
+            <li>AI Stewardship e responsabilidade prática</li>
+            <li>Pesquisa assistida por IA com mais integridade</li>
+          </ul>
+
+          <div class="button-row">
+            <a class="button button-primary" href="mailto:contato@intelexta.com">Entrar em contato</a>
+            <a class="button button-secondary" href="/">Voltar para a página inicial</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div>
+        <strong>Intelexta</strong><br />
+        Transparência, verificação e responsabilidade para trabalho assistido por IA.
+      </div>
+      <div class="footer-links">
+        <a href="/">Início</a>
+        <a href="/docs/">Docs</a>
+        <a href="https://validator.intelexta.com" target="_blank" rel="noopener noreferrer">Validator</a>
+        <a href="mailto:contato@intelexta.com">Contato</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
